@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FlatList from './FlatList';
-import Flat from './Flat';
+import GoogleMapReact from './GoogleMapReact';
 
 
 class App extends Component {
@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <div className="flat-list"><FlatList /></div>
+        <div className="map-container"><GoogleMapReact />Test</div>
       </div>
     )
   }
