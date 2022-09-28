@@ -7,8 +7,7 @@ class App extends Component {
   render () {
     return (
       <div>
-        <div><FlatList /></div>
-        <div><Flat /></div>
+        <div className="flat-list"><FlatList /></div>
       </div>
     )
   }

@@ -4,8 +4,8 @@ import Flat from './Flat';
 
 const FlatList = () => {
   return (
-    flats.map(({ lat, lng, name, imageUrl, price, priceCurrency }) =>
-    <Flat
+    flats.map(({ lat, lng, name, imageUrl, price, priceCurrency
+    }) => <Flat
       lat={lat}
       lng={lng}
       name={name}
