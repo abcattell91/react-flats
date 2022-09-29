@@ -1,11 +1,9 @@
 import React from 'react';
+import Flat from './Flat';
 
-const marker = () => {
+const Marker = () => {
   return (
-    lat={59.955413}
-    lng={30.337844}
-    text="My Marker"
-  )
-}
+    <div>Maker</div>
+  )};
 
 export default Marker;

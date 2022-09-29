@@ -4,15 +4,18 @@ import Flat from './Flat';
 
 const FlatList = () => {
   return (
-    flats.map(({ lat, lng, name, imageUrl, price, priceCurrency
-    }) => <Flat
-      lat={lat}
-      lng={lng}
-      name={name}
-      imageUrl={imageUrl}
-      price={price}
-      priceCurrency={priceCurrency}
-      key={lat}
-    />)
+    <div className="flat-list">
+      {flats.map(({ lat, lng, name, imageUrl, price, priceCurrency, selectFlat
+      }) => <Flat
+        lat={lat}
+        lng={lng}
+        name={name}
+        imageUrl={imageUrl}
+        price={price}
+        priceCurrency={priceCurrency}
+        key={lat}
+        selectFlat={selectFlat}
+      />)}
+      </div>
 )};
 export default FlatList;
