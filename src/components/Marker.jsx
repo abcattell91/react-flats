@@ -3,7 +3,7 @@ import Flat from './Flat';
 
 const Marker = () => {
   return (
-    <div>Maker</div>
+    console.log(this.state.lat)
   )};
 
 export default Marker;

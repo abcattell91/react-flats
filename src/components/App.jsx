@@ -10,27 +10,25 @@ class App extends Component {
 
     this.state = {
       selectedFlatLat: null,
-      selectedFlatLng: null
     };
     this.selectFlat = this.selectFlat.bind(this);
   }
 
-  selectFlat(lat, lng) {
+  selectFlat(lat) {
     this.setState({
-      selectedFlatLat: lat,
-      selectedFlatLng: lng
+      selectedFlatLat: lat
     });
   }
 
   render () {
     return (
       <div>
-        <FlatList selectFlat={console.log(this.selectFlat)} />
+        <FlatList selectFlat={this.selectFlat} />
         <div className="map-container">
           <GoogleMapReact />
         </div>
         <div className="marker">
-          <Marker lat={this.state.selectedFlatLat} lng={this.state.selectedFlatLng} />
+          <Marker lat={this.state.selectedFlatLat}/>
         </div>
       </div>
     );
