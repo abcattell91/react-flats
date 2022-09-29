@@ -2,7 +2,7 @@ import React from "react";
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
 
-export default function SimpleMap(){
+export default function SimpleMap() {
   const defaultProps = {
     center: {
       lat: 48.864716,
