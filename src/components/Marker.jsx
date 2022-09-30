@@ -1,9 +1,9 @@
 import React from 'react';
 import Flat from './Flat';
 
-const Marker = ({ selectFlat }) => {
+const Marker = () => {
   return (
-    <div className="marker">{selectFlat}</div>
+    <div className="marker"></div>
   )};
 
 export default Marker;
