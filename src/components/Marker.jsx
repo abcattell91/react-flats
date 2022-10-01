@@ -3,7 +3,7 @@ import Flat from './Flat';
 
 const Marker = () => {
   return (
-    <div className="marker"></div>
+    <div className="marker">test</div>
   )};
 
 export default Marker;

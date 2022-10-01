@@ -5,22 +5,22 @@ import Marker from './Marker';
 
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
+  constructor(props) {
+    super(props);
 
-  //   this.state = {
-  //     selectedFlatLat: null,
-  //     selectedFlatLng: null
-  //   };
-  //   this.selectFlat = this.selectFlat.bind(this);
-  // }
+    this.state = {
+      selectedFlatLat: null,
+      selectedFlatLng: null
+    };
+    this.selectFlat = this.selectFlat.bind(this);
+  }
 
-  // selectFlat(lat, lng) {
-  //   this.setState({
-  //     selectedFlatLat: lat,
-  //     selectedFlatLng: lng
-  //   });
-  // }
+  selectFlat(lat, lng) {
+    this.setState({
+      selectedFlatLat: lat,
+      selectedFlatLng: lng
+    });
+  }
 
   render () {
     return (
@@ -28,6 +28,9 @@ class App extends Component {
         <FlatList selectFlat={this.selectFlat} />
         <div className="map-container">
           <GoogleMapReact />
+        </div>
+        <div className="marker">
+          <Marker lat={this.state.selectedFlatLat} lng={this.state.selectedFlatLng}/>
         </div>
       </div>
     );
